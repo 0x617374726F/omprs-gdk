@@ -198,7 +198,7 @@ native!(Player_GetSirenState, player: struct Player, -> i32);
 native!(Player_GetLandingGearState, player: struct Player, -> i32);
 native!(Player_GetHydraReactorAngle, player: struct Player, -> u32);
 native!(Player_GetTrainSpeed, player: struct Player, -> f32);
-native!(Player_IsPlayerUsingOmp, player: struct Player, -> bool);
+native!(Player_IsUsingOmp, player: struct Player, -> bool);
 
 #[doc(hidden)]
 pub fn load_functions() {
@@ -391,5 +391,5 @@ pub fn load_functions() {
     load_function!(Player_GetLandingGearState);
     load_function!(Player_GetHydraReactorAngle);
     load_function!(Player_GetTrainSpeed);
-    load_function!(Player_IsPlayerUsingOmp);
+    load_function!(Player_IsUsingOmp);
 }

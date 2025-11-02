@@ -1428,7 +1428,7 @@ impl Player {
 
     /// Check if the player is using the open.mp launcher
     pub fn is_using_omp(&self) -> bool {
-        functions::Player_IsPlayerUsingOmp(self)
+        functions::Player_IsUsingOmp(self)
     }
 
     fn defer_api_call(&self, callback: Box<dyn FnOnce(Self)>) {
